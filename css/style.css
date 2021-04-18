@@ -157,19 +157,93 @@ body {
   justify-content: center;
   text-align: left;
   transform: scale(0.80);
-  
+  position:relative;
 }
 #smokeshort{
-  width: 30%;
-  height: 5%;
-  transform: translate(90%, 570%);
+  width: 3%;
   cursor: pointer;
   transition: transform .2s;
+  position: absolute;
+  top: 28%;
+  left: 44.4%;
 }
 #smokewindow{
-  width: 30%;
-  height: 5%;
-  transform: translate(-380%, 820%);
+  width: 3%;
   cursor: pointer;
   transition: transform .2s;
+  position: absolute;
+  top: 40.7%;
+  left: 37.5%;
+}
+#smokect{
+  width: 3%;
+  cursor: pointer;
+  transition: transform .2s;
+  position: absolute;
+  top: 88.5%;
+  left: 43%;
+}
+#smokestairs{
+  width: 3%;
+  cursor: pointer;
+  transition: transform .2s;
+  position: absolute;
+  top: 66%;
+  left: 51.3%;
+}
+#smokejunglecon{
+  width: 3%;
+  cursor: pointer;
+  transition: transform .2s;
+  position: absolute;
+  top: 66%;
+  left: 47.5%;
+}
+#smokeasite{
+  width: 3%;
+  cursor: pointer;
+  transition: transform .2s;
+  position: absolute;
+  top: 79.5%;
+  left: 52.6%;
+}
+#smokeleftshort{
+  width: 3%;
+  cursor: pointer;
+  transition: transform .2s;
+  position: absolute;
+  top: 10.2%;
+  left: 30.3%;
+}
+#smokerightshort{
+  width: 3%;
+  cursor: pointer;
+  transition: transform .2s;
+  position: absolute;
+  top: 18%;
+  left: 30.3%;
+}
+#smokekitchen{
+  width: 3%;
+  cursor: pointer;
+  transition: transform .2s;
+  position: absolute;
+  top: 29.8%;
+  left: 21%;
+}
+#smoketopmid{
+  width: 3%;
+  cursor: pointer;
+  transition: transform .2s;
+  position: absolute;
+  top: 35%;
+  left: 60%;
+}
+#smokecon{
+  width: 3%;
+  cursor: pointer;
+  transition: transform .2s;
+  position: absolute;
+  top: 47%;
+  left: 47.5%;
 }
