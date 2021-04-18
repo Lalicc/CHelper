@@ -47,3 +47,19 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+let modalVideo = document.getElementById('modal-video');
+let modalSource = document.getElementById('modal-source');
+
+let smokes = Array.from(document.getElementsByClassName('smoke'));
+
+smokes.forEach(smoke => {
+  smoke.addEventListener("click", () => {
+    modalSource.setAttribute('src', "video/"+smoke.getAttribute('data-video'));
+    modalVideo.load();
+  });
+});
+
+$('#exampleModalCenter').on('hidden.bs.modal', () => {
+  modalVideo.pause();
+});
