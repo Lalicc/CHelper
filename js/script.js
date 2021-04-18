@@ -48,3 +48,23 @@ nades.forEach(nade => {
 $('#exampleModalCenter').on('hidden.bs.modal', () => {
   modalVideo.pause();
 });
+
+//X CROSS
+
+nades.forEach(nade => {
+  nade.addEventListener("mouseover", () => {
+    let x = document.getElementById(`${nade.id}x`)
+    x.style.visibility='visible';
+  });
+});
+nades.forEach(nade => {
+  nade.addEventListener("mouseleave", () => {
+    removeAllMarks();
+  });
+});
+let nadesx = Array.from(document.getElementsByClassName('nadex'));
+const removeAllMarks = () => {
+  nadesx.forEach(nadex => {
+    nadex.style.visibility='hidden';
+  });
+}
