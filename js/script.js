@@ -51,11 +51,11 @@ function topFunction() {
 let modalVideo = document.getElementById('modal-video');
 let modalSource = document.getElementById('modal-source');
 
-let smokes = Array.from(document.getElementsByClassName('smoke'));
+let nades = Array.from(document.getElementsByClassName('nade'));
 
-smokes.forEach(smoke => {
-  smoke.addEventListener("click", () => {
-    modalSource.setAttribute('src', "video/"+smoke.getAttribute('data-video'));
+nades.forEach(nade => {
+  nade.addEventListener("click", () => {
+    modalSource.setAttribute('src', "video/" + nade.getAttribute('data-video'));
     modalVideo.load();
   });
 });
