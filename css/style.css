@@ -1,0 +1,175 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+}
+.container {
+  margin: auto;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 19px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid #707070;
+  color: #C6C6C6;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 100%;
+  text-align: center;
+  justify-content: center;
+}
+#myBtn:hover{
+  background-color:#707070;
+}
+#main-header {
+  border-bottom: 1px solid #000000;
+}
+.logo {
+  height: 50px;
+}
+.navbar {
+  padding: 16px 0px;
+  transition: all 350ms ease;
+}
+.navbar li {
+  display: inline;
+  margin-right: 20px !important;
+  list-style: none;
+}
+.navbar a {
+  text-decoration: none;
+}
+.nav-link {
+  color: #C6C6C6 !important;
+}
+.nav-item {
+  font-size: 21px;
+}
+.js-transparent {
+  background: transparent !important;
+}
+.js-navbar-bg {
+  background: #121212;
+  padding: 0px;
+}
+#showcase {
+  background: url('../img/bg.jpg') no-repeat left center;
+  object-fit: contain;
+  margin-bottom: 30px;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+#scnaslov{
+  font-size: 50px;
+}
+#scp{
+  font-size: 24px;
+}
+.wepguide{
+  text-align: center;
+  justify-content: center;
+  color: #C6C6C6;
+  padding-top: 25px;
+}
+.wep{
+  background-color: #1F1E1E;
+  color: #C6C6C6;
+  height: 250px;
+}
+.wepl{
+  margin: 0;
+  justify-content: center;
+}
+#slwep{
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+}
+.wepm{
+  padding-top: 75px;
+  height: 250px;
+  background-color: #222222;
+  justify-content: center;
+  text-align: center;
+
+}
+.wepr{
+  margin: 0;
+  padding-top: 5px;
+  justify-content: center;
+  text-align: center;
+}
+.ytlink{
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 240px;
+}
+
+/*SCROLL BAR*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 10px grey; 
+  border-radius: 6px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555454; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(0, 0%, 46%); 
+}
+
+.nades{
+  text-align: center;
+  justify-content: center;
+  color: #C6C6C6;
+  padding: 25px;
+}
+.mirage{
+  background: url('../img/mirage.png') center;
+  object-fit: contain;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  transform: scale(0.80);
+  
+}
+#smokeshort{
+  width: 30%;
+  height: 5%;
+  transform: translate(90%, 570%);
+  cursor: pointer;
+  transition: transform .2s;
+}
+#smokewindow{
+  width: 30%;
+  height: 5%;
+  transform: translate(-380%, 820%);
+  cursor: pointer;
+  transition: transform .2s;
+}
