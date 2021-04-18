@@ -39,6 +39,7 @@ body {
 .navbar {
   padding: 16px 0px;
   transition: all 350ms ease;
+  background: blue;
 }
 .navbar li {
   display: inline;
