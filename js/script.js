@@ -50,7 +50,6 @@ $('#exampleModalCenter').on('hidden.bs.modal', () => {
 });
 
 //X CROSS
-
 nades.forEach(nade => {
   nade.addEventListener("mouseover", () => {
     let x = document.getElementById(`${nade.id}x`)
@@ -67,4 +66,29 @@ const removeAllMarks = () => {
   nadesx.forEach(nadex => {
     nadex.style.visibility='hidden';
   });
+}
+
+//DDNADES
+
+let ddnade = document.getElementById('ddnade');
+let options = Array.from(ddnade.getElementsByTagName('option'));
+ddnade.addEventListener('change', () => {
+options.forEach(option => {
+if(option.selected){
+clearAllNades();
+showNades(option.value);
+}
+});
+})
+
+const clearAllNades = () => {
+  nades.forEach(nade => {
+    nade.style.visibility='hidden';
+  })
+}
+
+const showNades = (name) => {
+  nades.forEach(nade => {
+    if(nade.classList.contains(name) || name==='all') nade.style.visibility='visible'; 
+  })
 }
